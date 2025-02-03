@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "new-project-py"
+version = "0.1.0"
+description = "A simple Python boilerplate generator"
+authors = [{ name = "Peter Dresslar", email = "peterdresslar@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.12"
+
+[project.scripts]
+new-project-py = "new_project_py.cli:main"
